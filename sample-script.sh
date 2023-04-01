@@ -1,0 +1,1 @@
+docker login ; docker pull "path-of-image-on-dockerhub" ; docker commit "name-of-cotainer" "name-of-older-image":$(date +'%Y-%m-%d_%H-%M') ; docker rm -f "name-of-old-container"; docker run -d -it  --restart=always --network=mytestnet --name "name-of-cotainer" "path-of-docker-image-on-dockerhub"
